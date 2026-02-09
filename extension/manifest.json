@@ -1,0 +1,15 @@
+{
+  "name": "Floating Interview Assistant",
+  "description": "Opens a floating window that listens to speech and shows ChatGPT answers.",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Open Floating Assistant"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "options_page": "options.html"
+}

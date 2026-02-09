@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Floating Interview Assistant</title>
+    <link rel="stylesheet" href="window.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <p class="eyebrow">Floating Interview Assistant</p>
+        <h1>Listen. Answer. Stay in flow.</h1>
+      </div>
+      <button id="settingsButton" class="ghost">Settings</button>
+    </header>
+
+    <main>
+      <section class="status-card">
+        <div>
+          <p class="label">Status</p>
+          <p id="statusText" class="status">Idle</p>
+        </div>
+        <button id="toggleListen" class="primary">Start Listening</button>
+      </section>
+
+      <section class="panel">
+        <p class="label">Heard</p>
+        <p id="transcript" class="text muted">No audio captured yet.</p>
+      </section>
+
+      <section class="panel">
+        <p class="label">Answer</p>
+        <p id="answer" class="text">Your answer will appear here.</p>
+      </section>
+
+      <section class="panel small">
+        <p class="label">Tips</p>
+        <ul>
+          <li>Use a headset for cleaner audio.</li>
+          <li>Click settings to add your OpenAI API key.</li>
+          <li>Keep this window on top during interviews.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="window.js"></script>
+  </body>
+</html>
